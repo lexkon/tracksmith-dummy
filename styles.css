@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 200;
+  }
+
+  a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fffff3;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    height: 7rem;
+    width: 100%;
+    transition: background-color .5s ease;
+  }
+
+  nav:hover {
+    background-color: #fffff3;
+    transition: background-color .5s ease;
+  }
+
+  nav:hover a {
+    color: #0A1E32;
+    transition: color .5s ease;
+  }
+  
+  nav a {
+    color: #fffff3;
+    font-size: 0.750rem;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color .5s ease;
+  }
+
+  nav a:hover {
+    color: #9A825C;
+    transition: color .25s ease;
+  }
+
+  nav img {
+    height: 80%;
+    width: auto;
+    padding: 10px;
+  }
+
+  .hero {
+    background-image: url(/resources/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero h1 {
+    color: #fffff3;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero h2 {
+    color: #fffff3;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  .hero-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    /* grid-template-columns: repeat(2 1fr); */
+  }
+
+  .hero-links a {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 5%;
+  }
+
+  .products {
+    display: grid;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    gap: 2%;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  #mens, 
+  #womens, 
+  #footwear {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    padding: 15%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: #fffff3;
+    text-align: center;
+    padding: 50% 0;
+  }
+
+  #mens {
+    background-image: url(/resources/mens.jpeg);
+  }
+  
+  #womens {
+    background-image: url(/resources/womens.jpeg);
+  }
+
+  #footwear {
+    background-image: url(/resources/footwear.jpeg);
+  }
+  
+  footer {
+    background-color: #0A1E32;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+  }
+  
+
+/* Media queries */
+
+@media only screen and (max-width: 800px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    background-color: #fffff3;
+    height: 5rem;
+  }
+
+  nav a {
+    display: none;
+  }
+  
+  nav img {
+    height: 100%;
+  }
+  
+  .row {
+    flex-direction: column;
+  }
+  
+  .hero-link {
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+  
